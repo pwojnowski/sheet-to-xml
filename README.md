@@ -11,7 +11,7 @@ It creates target/uberjar/sheet-to-xml-0.1.0-SNAPSHOT-standalone.jar.
 ## Usage
 
 ```shell
-java -jar target/sheet-to-xml--0.1.0-SNAPSHOT-standalone.jar [options] files
+java -jar sheet-to-xml.jar [options] files
 ```
 
 ## Options
@@ -28,11 +28,11 @@ java -jar target/sheet-to-xml--0.1.0-SNAPSHOT-standalone.jar [options] files
 
 1. Convert test-data.xlsm to test-data.xml with default excludes:
 ```shell
-java -jar target/uberjar/sheet-to-xml-0.1.0-SNAPSHOT-standalone.jar test-data.xlsm
+java -jar sheet-to-xml.jar test-data.xlsm
 ```
 2. Convert more-data.xlsm to more-data.xml, exclude _sheet1_ and _sheet2_ sheets:
 ```shell
-java -jar target/uberjar/sheet-to-xml-0.1.0-SNAPSHOT-standalone.jar -x sheet1,sheet2 more-data.xlsm
+java -jar sheet-to-xml.jar -x sheet1,sheet2 more-data.xlsm
 ```shell
 
 ### Contributing
