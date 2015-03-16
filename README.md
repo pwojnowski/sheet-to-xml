@@ -1,17 +1,17 @@
 # Sheet 2 DbUnit
 
-The program converts Excel XLSM files to DbUnit Flat XML format.
+Converts Excel XLSM files to flat XML format used by DbUnit.
 
 ## Installation
 
 Create a JAR: lein uberjar
 
-It creates target/uberjar/sheet2dbunit-0.1.0-SNAPSHOT-standalone.jar.
+It creates target/uberjar/sheet-to-xml-0.1.0-SNAPSHOT-standalone.jar.
 
 ## Usage
 
 ```shell
-java -jar target/sheet2dbunit--0.1.0-SNAPSHOT-standalone.jar [options] files
+java -jar target/sheet-to-xml--0.1.0-SNAPSHOT-standalone.jar [options] files
 ```
 
 ## Options
@@ -29,13 +29,13 @@ java -jar target/sheet2dbunit--0.1.0-SNAPSHOT-standalone.jar [options] files
 1. Convert test-data.xlsm to test-data.xml with default excludes:
 
 ```shell
-java -jar target/uberjar/sheet2dbunit-0.1.0-SNAPSHOT-standalone.jar test-data.xlsm
+java -jar target/uberjar/sheet-to-xml-0.1.0-SNAPSHOT-standalone.jar test-data.xlsm
 ```
 
 2. Convert more-data.xlsm to more-data.xml, exclude _sheet1_ and _sheet2_ sheets:
 
 ```shell
-java -jar target/uberjar/sheet2dbunit-0.1.0-SNAPSHOT-standalone.jar -x sheet1,sheet2 more-data.xlsm
+java -jar target/uberjar/sheet-to-xml-0.1.0-SNAPSHOT-standalone.jar -x sheet1,sheet2 more-data.xlsm
 ```shell
 
 ### Contributing
